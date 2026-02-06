@@ -1,4 +1,4 @@
-const CACHE_NAME = "jsm-orcamentos-v1";
+const CACHE_NAME = "jsm-orcamentos-v2";
 
 const URLS_TO_CACHE = [
   "./",
@@ -32,3 +32,4 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then((cached) => cached || fetch(event.request))
   );
 });
+
