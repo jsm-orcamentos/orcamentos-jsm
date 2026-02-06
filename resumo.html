@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo - Orçamentos JSM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.1/jspdf.plugin.autotable.min.js"></script>
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin-allow-popups">
+</head>
+<body>
+    <div class="topbar">
+        <button class="iconbtn" id="btnMenu">☰</button>
+        <div class="brand"><img src="logo.png" alt="">JSM Orçamentos</div>
+        <div style="width:44px"></div>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <img class="logo" src="logo.png" alt="Logo JSM">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="cliente.html" class="nav-link">Cliente</a>
+                <a href="materiais.html" class="nav-link">Materiais</a>
+                <a href="mao-de-obra.html" class="nav-link">Mão de Obra</a>
+                <a href="observacoes.html" class="nav-link">Observações</a>
+                <a href="resumo.html" class="nav-link active">Resumo</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <section class="card">
+                <h2>Resumo do Orçamento</h2>
+                <div id="resumo-content"></div>
+                <div class="actions">
+                    <button id="btn-gerar-pdf" class="btn primary">Gerar PDF</button>
+                    <a href="observacoes.html" class="btn secondary">Voltar</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loader com logo flutuante -->
+    <div id="overlayLoader" class="blur-overlay" style="display:none">
+        <div class="float-card">
+            <img src="logo.png" class="float-logo" alt="Logo JSM">
+            <p class="float-title">Carregando orçamento...</p>
+            <p class="float-sub">Buscando dados no Google Drive</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

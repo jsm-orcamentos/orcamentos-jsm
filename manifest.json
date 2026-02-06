@@ -1,0 +1,22 @@
+{
+  "name": "Orçamentos JSM",
+  "short_name": "JSM Orçamentos",
+  "description": "Sistema de orçamentos profissionais com design impactante",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0A1A3D",
+  "theme_color": "#F47A20",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
