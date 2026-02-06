@@ -1008,4 +1008,3 @@ document.addEventListener("DOMContentLoaded", () => {
 function toUpperSafe(v) {
   return (v ?? "").toString().toUpperCase();
 }
-tokenClient.requestAccessToken({ prompt: "select_account" });
