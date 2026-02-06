@@ -179,6 +179,7 @@ async function initGoogleIfNeeded() {
   tokenClient = window.google.accounts.oauth2.initTokenClient({
     client_id: GOOGLE_CLIENT_ID,
     scope: DRIVE_SCOPES,
+    prompt: "select_account", // ✅ força escolher a conta
     callback: (resp) => {
       accessToken = resp.access_token;
       window.gapi.client.setToken({ access_token: accessToken });
@@ -1022,3 +1023,4 @@ document.addEventListener("DOMContentLoaded", () => {
 function toUpperSafe(v) {
   return (v ?? "").toString().toUpperCase();
 }
+
