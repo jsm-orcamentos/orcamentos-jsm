@@ -6,11 +6,11 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#F47A20">
     <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js');
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" });
         });
-    }
+      }
     </script>
     <title>Orçamentos JSM - Design de Impacto</title>
     <link rel="stylesheet" href="styles.css">
@@ -74,3 +74,4 @@
 </body>
 
 </html>
+
